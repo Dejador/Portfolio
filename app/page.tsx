@@ -26,7 +26,7 @@ function Navbar() {
           href='mailto:adolfomv@gmail.com'
           className=' animate-pulse hover:text-amber-400 hover:animate-none'
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       </div>
     </div>
@@ -37,7 +37,7 @@ function Personal() {
   return (
     <>
       <div className='text-2xl lg:text-5xl text-center flex'>
-        <p className='text-amber-400'>Welcome</p>, I'm Adolfo Murillo
+        <p className='text-amber-400'>Welcome</p>, I&apos;m Adolfo Murillo
       </div>
       <div className='w-3/4 lg:w-1/2 text-center mt-6'>
         <div>
@@ -45,7 +45,7 @@ function Personal() {
           design and customer success who loves to engage in new challenges.
           <br />
           <br />
-          I'm building my portfolio and focusing on Job opportunities where I
+          I&apos;m building my portfolio and focusing on Job opportunities where I
           can contribute, learn and grow.
         </div>
       </div>

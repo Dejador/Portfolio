@@ -17,11 +17,11 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  max-width: 1200px;
+  background: rgb(0, 0, 0) ;
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(50,116,255,1) 50%, rgba(0,0,0,1) 100%); */
+  color: white;
+  margin: auto;
+  border-left: solid 3px rgb(251 191 36);
+  border-right: solid 3px rgb(251 191 36);
 }

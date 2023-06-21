@@ -25,3 +25,29 @@ body {
   border-left: solid 3px rgb(251 191 36);
   border-right: solid 3px rgb(251 191 36);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}

@@ -36,7 +36,7 @@ function Navbar() {
 function Personal() {
   return (
     <>
-      <div className='text-2xl lg:text-5xl text-center flex'>
+      <div className='text-2xl lg:text-5xl text-center flex my-6'>
         <p className='text-amber-400'>Welcome</p>, I&apos;m Adolfo Murillo
       </div>
       <div className='w-3/4 lg:w-1/2 text-center mt-6'>

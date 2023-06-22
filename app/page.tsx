@@ -36,10 +36,11 @@ function Navbar() {
 function Personal() {
   return (
     <>
-      <div className='text-2xl lg:text-5xl text-center flex my-6'>
-        <p className='text-amber-400'>Welcome</p>, I&apos;m Adolfo Murillo
+      <div className='text-2xl lg:text-5xl text-center flex-col my-6'>
+        <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
+        <div>I&apos;m Adolfo Murillo</div>
       </div>
-      <div className='w-3/4 lg:w-1/2 text-center mt-6'>
+      <div className='w-3/4 lg:w-1/2 text-justify mt-6'>
         <div>
           A Frontend Web Developer in the making with an extensive background in
           design and customer success who loves to engage in new challenges.
@@ -95,7 +96,7 @@ function Projects({ projects: [] }) {
               <div className='text-xl mb-4 border-b-2 border-amber-400 px-2'>
                 {name}
               </div>
-              <div className='mb-4'>{description}</div>
+              <div className='mb-6 text-justify px-12'>{description}</div>
               <div className='flex-col lg:flex lg:flex-row gap-16'>
                 <Image
                   className='rounded-md'

@@ -3,8 +3,8 @@ import { skills, projects } from '../common/data';
 
 function Navbar() {
   return (
-    <div className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)]'>
-      <div className='w-12 h-full'>
+    <div className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none'>
+      <div className='w-12 h-full hover:opacity-80 hover:duration-700'>
         <a href='#' className='w-12 mt-2 h-12 absolute'></a>
         <div className='flex h-12 mt-2'>
           <Image
@@ -36,11 +36,11 @@ function Navbar() {
 function Personal() {
   return (
     <>
-      <div className='text-2xl lg:text-5xl text-center flex-col my-6'>
+      <div className='text-2xl lg:text-5xl text-center flex-col my-6 select-none'>
         <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
         <div>I&apos;m Adolfo Murillo</div>
       </div>
-      <div className='w-3/4 lg:w-1/2 text-justify mt-6'>
+      <div className='w-3/4 px-2 lg:px-12 mt-6 select-none'>
         <div>
           A Frontend Web Developer in the making with an extensive background in
           design and customer success who loves to engage in new challenges.
@@ -57,8 +57,8 @@ function Personal() {
 function Skills({ skills: [] }) {
   return (
     <>
-      <div className='text-2xl text-amber-400 mb-12'>Skills</div>
-      <div className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-3'>
+      <div className='text-2xl text-amber-400 mb-12 select-none'>Skills</div>
+      <div className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-3 select-none'>
         {skills.map(({ name, imageUrl, imageAlt }, index) => (
           <div
             key={index}
@@ -82,7 +82,7 @@ function Skills({ skills: [] }) {
 function Projects({ projects: [] }) {
   return (
     <>
-      <div className='text-2xl text-amber-400 mb-12'>Projects</div>
+      <div className='text-2xl text-amber-400 mb-12 select-none'>Projects</div>
       {projects.map(
         (
           { name, description, imageUrl, imageAlt, websiteUrl, githubUrl },
@@ -90,13 +90,13 @@ function Projects({ projects: [] }) {
         ) => (
           <div
             key={index}
-            className='flex-col flex items-center text-center w-3/4'
+            className='flex-col flex items-center w-3/4 select-none'
           >
             <div className='bg-zinc-500 items-center w-full flex flex-col py-6 px-6 rounded-3xl mb-6'>
-              <div className='text-xl mb-4 border-b-2 border-amber-400 px-2'>
+              <div className='text-center text-xl mb-4 border-b-2 border-amber-400 px-2'>
                 {name}
               </div>
-              <div className='mb-6 text-justify px-12'>{description}</div>
+              <div className='mb-6 px-2 lg:px-12'>{description}</div>
               <div className='flex-col lg:flex lg:flex-row gap-16'>
                 <Image
                   className='rounded-md'
@@ -107,14 +107,14 @@ function Projects({ projects: [] }) {
                 />
                 <div className='flex flex-col gap-2 items-center mt-4 lg:m-auto'>
                   <a
-                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105'
+                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
                     href={websiteUrl}
                     target='_blank'
                   >
                     Visit Website
                   </a>
                   <a
-                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105'
+                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
                     href={githubUrl}
                     target='_blank'
                   >

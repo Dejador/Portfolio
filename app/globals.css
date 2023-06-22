@@ -23,6 +23,8 @@ body {
   margin: auto;
   border-left: solid 3px rgb(251 191 36);
   border-right: solid 3px rgb(251 191 36);
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* width */

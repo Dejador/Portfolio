@@ -18,6 +18,12 @@ export const skills = [
     imageAlt: 'JavaScript Logo',
   },
   {
+    name: 'TypeScript',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_typescript.svg?alt=media&token=92645e00-a6e9-4e35-b08b-bb978143c4da',
+    imageAlt: 'TypeScript Logo',
+  },
+  {
     name: 'React',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
@@ -28,6 +34,12 @@ export const skills = [
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_nextjs.svg?alt=media&token=ff0207f5-7111-4aee-8a38-74aea567bd87',
     imageAlt: 'Next.js Logo',
+  },
+  {
+    name: 'Firebase',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_firebase.svg?alt=media&token=771efa2b-7317-4ffd-82ea-c199f35249d6',
+    imageAlt: 'Firebase Logo',
   },
   {
     name: 'Vercel',
@@ -48,10 +60,10 @@ export const skills = [
     imageAlt: 'Github Logo',
   },
   {
-    name: 'Adobe Suite',
+    name: 'Adobe',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_adobe.svg?alt=media&token=0d0507f1-2758-4b24-b3c5-205f3f942332',
-    imageAlt: 'Adobe Suite Logo',
+    imageAlt: 'Adobe Logo',
   },
 ];
 

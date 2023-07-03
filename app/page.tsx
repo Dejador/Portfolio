@@ -58,11 +58,11 @@ function Skills({ skills: [] }) {
   return (
     <>
       <div className='text-2xl text-amber-400 mb-12 select-none'>Skills</div>
-      <div className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-3 select-none'>
+      <div className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'>
         {skills.map(({ name, imageUrl, imageAlt }, index) => (
           <div
             key={index}
-            className='w-[25px] md:w-[50px] lg:w-[50px] flex flex-col items-center'
+            className='w-[25px] md:w-[50px] lg:w-[50px] lg:mx-3 flex flex-col items-center'
           >
             <Image
               className='rounded-md'

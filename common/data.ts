@@ -71,7 +71,7 @@ export const projects = [
   {
     name: 'B-Fit',
     description:
-      'A personal project dedicated to fitness, built implementing API calls, authentication and full CRUD and using technologies and services such as React, Next.js, RapidAPI, Firebase and Tailwind.',
+      'A personal project dedicated to fitness, built implementing API calls, authentication and full CRUD and using technologies and services such as TypeScript, React, Next.js, RapidAPI, Firebase and Tailwind.',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/BeFit_01_B.gif?alt=media&token=3afdcc29-5c39-4734-86af-6d488bc69766',
     imageAlt: 'B-Fit Gif',

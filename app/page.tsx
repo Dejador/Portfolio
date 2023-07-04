@@ -1,10 +1,18 @@
+'use client';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { skills, projects } from '../common/data';
 
 function Navbar() {
   return (
-    <div className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none'>
-      <div className='w-12 h-full hover:opacity-80 hover:duration-700'>
+    <motion.div
+        animate={{ opacity: [0, 1]}}
+        transition={{ duration:1.5, delay: 2 }}  className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none'>
+      <motion.div
+        animate={{ y: [-60, 0], opacity: [0, 1] }}
+        transition={{ duration: 1, delay: 1 }}
+        className='w-12 h-full hover:opacity-80 hover:duration-700'
+      >
         <a href='#' className='w-12 mt-2 h-12 absolute'></a>
         <div className='flex h-12 mt-2'>
           <Image
@@ -14,8 +22,12 @@ function Navbar() {
             alt='Profile Pic'
           />
         </div>
-      </div>
-      <div className='flex gap-3'>
+      </motion.div>
+      <motion.div
+        animate={{ x: [700, 0], opacity: [0, 1] }}
+        transition={{ duration: 1, delay: 1.5 }}
+        className='flex gap-3'
+      >
         <a href='#projects' className=' hover:text-amber-400'>
           Projects
         </a>
@@ -28,28 +40,34 @@ function Navbar() {
         >
           Let&apos;s Talk
         </a>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
 function Personal() {
   return (
     <>
-      <div className='text-2xl lg:text-5xl text-center flex-col my-6 select-none'>
-        <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
-        <div>I&apos;m Adolfo Murillo</div>
-      </div>
-      <div className='w-3/4 px-2 lg:px-12 mt-6 select-none'>
-        <div>
-          A Frontend Web Developer in the making with an extensive background in
-          design and customer success who loves to engage in new challenges.
-          <br />
-          <br />
-          I&apos;m building my portfolio and focusing on Job opportunities where I
-          can contribute, learn and grow.
+      <motion.div
+        animate={{ y: [-450, 0], opacity: [0, 1]}}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        <div className='text-2xl lg:text-5xl text-center flex-col my-6 select-none'>
+          <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
+          <div>I&apos;m Adolfo Murillo</div>
         </div>
-      </div>
+        <div className='mx-auto w-3/4 px-2 lg:px-12 mt-6 select-none'>
+          <div>
+            A Frontend Web Developer in the making with an extensive background
+            in design and customer success who loves to engage in new
+            challenges.
+            <br />
+            <br />
+            I&apos;m building my portfolio and focusing on Job opportunities
+            where I can contribute, learn and grow.
+          </div>
+        </div>
+      </motion.div>
     </>
   );
 }
@@ -57,8 +75,16 @@ function Personal() {
 function Skills({ skills: [] }) {
   return (
     <>
-      <div className='text-2xl text-amber-400 mb-12 select-none'>Skills</div>
-      <div className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'>
+      <motion.div
+        animate={{ rotate:[360, 0], opacity: [0, 1], scale:[0, 1] }}
+        transition={{ duration:1, delay: 1.5 }}
+        className='text-2xl text-amber-400 mb-12 select-none'
+      >
+        Skills
+      </motion.div>
+      <motion.div
+        animate={{ opacity: [0, 1]}}
+        transition={{ duration:1.5, delay: 2 }} className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'>
         {skills.map(({ name, imageUrl, imageAlt }, index) => (
           <div
             key={index}
@@ -74,7 +100,7 @@ function Skills({ skills: [] }) {
             <div className='text-xs mt-2'>{name}</div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 }
@@ -82,13 +108,17 @@ function Skills({ skills: [] }) {
 function Projects({ projects: [] }) {
   return (
     <>
-      <div className='text-2xl text-amber-400 mb-12 select-none'>Projects</div>
+      <motion.div
+        animate={{ opacity: [0, 1], rotate:[360, 0], scale:[0, 1] }}
+        transition={{ duration:1, delay: 1.5 }} className='text-2xl text-amber-400 mb-12 select-none'>Projects</motion.div>
       {projects.map(
         (
           { name, description, imageUrl, imageAlt, websiteUrl, githubUrl },
           index
         ) => (
-          <div
+          <motion.div
+          animate={{ opacity: [0, 1]}}
+          transition={{ duration:1.5, delay: 2 }} 
             key={index}
             className='flex-col flex items-center w-3/4 select-none'
           >
@@ -123,7 +153,7 @@ function Projects({ projects: [] }) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         )
       )}
     </>
@@ -133,8 +163,9 @@ function Projects({ projects: [] }) {
 export default function Home() {
   return (
     <>
-      <div className='flex-col flex w-full items-center'>
+      <div className='flex-col flex w-full items-center animate-fade_1 '>
         <div className='mt-28' />
+        <motion.div />
         <Navbar />
         <div className='flex flex-col w-full items-center'>
           <Personal />

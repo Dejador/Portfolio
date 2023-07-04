@@ -6,10 +6,12 @@ import { skills, projects } from '../common/data';
 function Navbar() {
   return (
     <motion.div
-        animate={{ opacity: [0, 1]}}
-        transition={{ duration:1.5, delay: 2 }}  className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none'>
+      animate={{ opacity: [0, 1] }}
+      transition={{ duration: 1 }}
+      className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none z-50'
+    >
       <motion.div
-        animate={{ y: [-60, 0], opacity: [0, 1] }}
+        animate={{ y: [-60, 0], scale: [0, 1] }}
         transition={{ duration: 1, delay: 1 }}
         className='w-12 h-full hover:opacity-80 hover:duration-700'
       >
@@ -24,7 +26,7 @@ function Navbar() {
         </div>
       </motion.div>
       <motion.div
-        animate={{ x: [700, 0], opacity: [0, 1] }}
+        animate={{ x: [700, 0], opacity: [0, 1], scale: [0, 1] }}
         transition={{ duration: 1, delay: 1.5 }}
         className='flex gap-3'
       >
@@ -49,8 +51,8 @@ function Personal() {
   return (
     <>
       <motion.div
-        animate={{ y: [-450, 0], opacity: [0, 1]}}
-        transition={{ duration: 1, delay: 1.5 }}
+        whileInView={{ opacity: [0, 1], scale: [0, 1] }}
+        transition={{ duration: 1 }}
       >
         <div className='text-2xl lg:text-5xl text-center flex-col my-6 select-none'>
           <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
@@ -76,15 +78,17 @@ function Skills({ skills: [] }) {
   return (
     <>
       <motion.div
-        animate={{ rotate:[360, 0], opacity: [0, 1], scale:[0, 1] }}
-        transition={{ duration:1, delay: 1.5 }}
+        animate={{ rotate: [360, 0], opacity: [0, 1], scale: [0, 1] }}
+        transition={{ duration: 1, delay: 1.5 }}
         className='text-2xl text-amber-400 mb-12 select-none'
       >
         Skills
       </motion.div>
       <motion.div
-        animate={{ opacity: [0, 1]}}
-        transition={{ duration:1.5, delay: 2 }} className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'>
+        whileInView={{ opacity: [0, 1], scale: [0, 1] }}
+        transition={{ duration: 1 }}
+        className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
+      >
         {skills.map(({ name, imageUrl, imageAlt }, index) => (
           <div
             key={index}
@@ -109,16 +113,20 @@ function Projects({ projects: [] }) {
   return (
     <>
       <motion.div
-        animate={{ opacity: [0, 1], rotate:[360, 0], scale:[0, 1] }}
-        transition={{ duration:1, delay: 1.5 }} className='text-2xl text-amber-400 mb-12 select-none'>Projects</motion.div>
+        animate={{ opacity: [0, 1], rotate: [360, 0], scale: [0, 1] }}
+        transition={{ duration: 1, delay: 1.5 }}
+        className='text-2xl text-amber-400 mb-12 select-none'
+      >
+        Projects
+      </motion.div>
       {projects.map(
         (
           { name, description, imageUrl, imageAlt, websiteUrl, githubUrl },
           index
         ) => (
           <motion.div
-          animate={{ opacity: [0, 1]}}
-          transition={{ duration:1.5, delay: 2 }} 
+            whileInView={{ opacity: [0, 1], scale: [0, 1] }}
+            transition={{ duration: 1 }}
             key={index}
             className='flex-col flex items-center w-3/4 select-none'
           >
@@ -165,7 +173,6 @@ export default function Home() {
     <>
       <div className='flex-col flex w-full items-center animate-fade_1 '>
         <div className='mt-28' />
-        <motion.div />
         <Navbar />
         <div className='flex flex-col w-full items-center'>
           <Personal />

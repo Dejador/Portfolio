@@ -54,16 +54,34 @@ export const skills = [
     imageAlt: 'Tailwind Logo',
   },
   {
+    name: 'Bootstrap',
+    imageUrl:
+        'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_bootstrap.svg?alt=media&token=d72fa444-4847-4dc6-a40d-6220473a83ba',
+    imageAlt: 'Bootstrap Logo',
+  },
+  {
     name: 'Github',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_github.svg?alt=media&token=82656644-05b4-4ad5-8727-ee20c96d0c4b',
     imageAlt: 'Github Logo',
   },
   {
+    name: 'Figma',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_figma.svg?alt=media&token=bec1cf71-1b33-485e-b8e6-ff45fb26a9a5',
+    imageAlt: 'Figma Logo',
+  },
+  {
     name: 'Adobe',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_adobe.svg?alt=media&token=0d0507f1-2758-4b24-b3c5-205f3f942332',
     imageAlt: 'Adobe Logo',
+  },
+  {
+    name: 'Slack',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_slack.svg?alt=media&token=5b57a8fc-f230-44de-9eae-f19913635477',
+    imageAlt: 'Slack Logo',
   },
 ];
 

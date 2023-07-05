@@ -6,7 +6,7 @@ import { skills, projects } from '../common/data';
 function Navbar() {
   return (
     <motion.div
-      animate={{ opacity: [0, 1] }}
+      animate={{ opacity: [0, 1], y:[-250,0] }}
       transition={{ duration: 1 }}
       className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none z-50'
     >

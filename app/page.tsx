@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { skills, projects } from '../common/data';
@@ -6,7 +7,7 @@ import { skills, projects } from '../common/data';
 function Navbar() {
   return (
     <motion.div
-      animate={{ opacity: [0, 1], y:[-250,0] }}
+      animate={{ opacity: [0, 1], y: [-250, 0] }}
       transition={{ duration: 1 }}
       className='max-w-[1200px] w-full bg-cyan-950 h-16 fixed flex items-center justify-between px-5 border-l-[3px] border-r-[3px] border-amber-400 drop-shadow-[0_10px_35px_rgba(255,255,255,0.50)] select-none z-50'
     >
@@ -131,33 +132,43 @@ function Projects({ projects: [] }) {
             className='flex-col flex items-center w-3/4 select-none'
           >
             <div className='bg-zinc-500 items-center w-full flex flex-col py-6 px-6 rounded-3xl mb-6'>
-              <div className='text-center text-xl mb-4 border-b-2 border-amber-400 px-2'>
-                {name}
-              </div>
-              <div className='mb-6 px-2 lg:px-12'>{description}</div>
+              {name && (
+                <div className='text-center text-xl mb-4 border-b-2 border-amber-400 px-2'>
+                  {name}
+                </div>
+              )}
+              {description && (
+                <div className='mb-6 px-2 lg:px-12'>{description}</div>
+              )}
               <div className='flex-col lg:flex lg:flex-row gap-16'>
-                <Image
-                  className='rounded-md'
-                  src={imageUrl}
-                  width={500}
-                  height={500}
-                  alt={imageAlt}
-                />
+                {imageUrl && (
+                  <Image
+                    className='rounded-md'
+                    src={imageUrl}
+                    width={500}
+                    height={500}
+                    alt={imageAlt}
+                  />
+                )}
                 <div className='flex flex-col gap-2 items-center mt-4 lg:m-auto'>
-                  <a
-                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
-                    href={websiteUrl}
-                    target='_blank'
-                  >
-                    Visit Website
-                  </a>
-                  <a
-                    className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
-                    href={githubUrl}
-                    target='_blank'
-                  >
-                    View on Github
-                  </a>
+                  {websiteUrl && (
+                    <a
+                      className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
+                      href={websiteUrl}
+                      target='_blank'
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                  {githubUrl && (
+                    <a
+                      className='px-1 w-32 leading-3 py-2 text-sm bg-neutral-800 rounded-md border border-amber-400 hover:scale-105 text-center'
+                      href={githubUrl}
+                      target='_blank'
+                    >
+                      View on Github
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

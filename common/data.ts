@@ -56,7 +56,7 @@ export const skills = [
   {
     name: 'Bootstrap',
     imageUrl:
-        'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_bootstrap.svg?alt=media&token=d72fa444-4847-4dc6-a40d-6220473a83ba',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_bootstrap.svg?alt=media&token=d72fa444-4847-4dc6-a40d-6220473a83ba',
     imageAlt: 'Bootstrap Logo',
   },
   {
@@ -105,5 +105,11 @@ export const projects = [
     imageAlt: 'TicTacToe Gif',
     websiteUrl: 'https://tictactoe-dejador.vercel.app/',
     githubUrl: 'https://github.com/Dejador/tictactoe',
+  },
+  {
+    name: 'Professional Portfolio',
+    description:
+      'Go behind the scenes and inspect the code that keeps this portfolio running.',
+    githubUrl: 'https://github.com/Dejador/Portfolio',
   },
 ];

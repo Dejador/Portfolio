@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { skills, projects } from '../common/data';
 
+const email: string = 'adolfo.vw84@gmail.com';
+
 function Navbar() {
   return (
     <motion.div
@@ -38,7 +40,7 @@ function Navbar() {
           Skills
         </a>
         <a
-          href='mailto:adolfomv@gmail.com'
+          href={`mailto:${email}`}
           className=' animate-pulse hover:text-amber-400 hover:animate-none'
         >
           Let&apos;s Talk
@@ -195,10 +197,10 @@ export default function Home() {
         <div />
         <div className='mt-4 mb-6'>
           <a
-            href='mailto:adolfomv@gmail.com'
+            href={`mailto:${email}`}
             className='text-cyan-500 hover:text-cyan-600'
           >
-            adolfomv@gmail.com
+            {email}
           </a>
         </div>
       </div>

@@ -76,13 +76,7 @@ export const skills = [
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_adobe.svg?alt=media&token=0d0507f1-2758-4b24-b3c5-205f3f942332',
     imageAlt: 'Adobe Logo',
-  },
-  {
-    name: 'Slack',
-    imageUrl:
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_slack.svg?alt=media&token=5b57a8fc-f230-44de-9eae-f19913635477',
-    imageAlt: 'Slack Logo',
-  },
+  }
 ];
 
 export const projects = [

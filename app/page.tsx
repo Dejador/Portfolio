@@ -184,7 +184,7 @@ function Projects({ projects: [] }) {
 export default function Home() {
   return (
     <>
-      <div className='flex-col flex w-full items-center animate-fade_1 '>
+      <div className='flex-col flex w-full items-center'>
         <div className='mt-28' />
         <Navbar />
         <div className='flex flex-col w-full items-center'>

@@ -72,10 +72,16 @@ export const skills = [
     imageAlt: 'Figma Logo',
   },
   {
-    name: 'Adobe',
+    name: 'Illustrator',
     imageUrl:
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_adobe.svg?alt=media&token=0d0507f1-2758-4b24-b3c5-205f3f942332',
-    imageAlt: 'Adobe Logo',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_illustrator.svg?alt=media&token=a664f1bb-b316-46ff-8f49-c7979e150c3e',
+    imageAlt: 'Illustrator Logo',
+  },
+  {
+    name: 'Photoshop',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_photoshop.svg?alt=media&token=ff2902e8-884a-4fb4-8a48-c8a17374dfa8',
+    imageAlt: 'Photoshop Logo',
   }
 ];
 

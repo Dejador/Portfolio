@@ -85,6 +85,51 @@ export const skills = [
   }
 ];
 
+export const certificates = [
+  {
+    name: 'HTML',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_html.svg?alt=media&token=fccb80e9-f5ae-462b-85e2-2b2a2ac1e7d9',
+    imageAlt: 'HTML Logo',
+    certificateUrl:'https://verify.w3schools.com/5ZXJWSCK6'
+  },
+  {
+    name: 'CSS',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_css.svg?alt=media&token=dad63ae3-4259-4735-ae17-5ee035ec4dfc',
+    imageAlt: 'CSS Logo',
+    certificateUrl:'https://verify.w3schools.com/606B7QP6G'
+  },
+  {
+    name: 'JavaScript',
+    imageUrl:
+    'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_js.svg?alt=media&token=9dc689cd-35f0-4c9f-b0e2-c81b6dbdc72b',
+    imageAlt: 'JavaScript Logo',
+    certificateUrl:'https://verify.w3schools.com/1O457SU2OU'
+  },
+  // {
+  //   name: 'TypeScript',
+  //   imageUrl:
+  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_typescript.svg?alt=media&token=92645e00-a6e9-4e35-b08b-bb978143c4da',
+  //   imageAlt: 'TypeScript Logo',
+  //   certificateUrl:'https://verify.w3schools.com/'
+  // },
+  // {
+  //   name: 'React',
+  //   imageUrl:
+  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
+  //   imageAlt: 'React Logo',
+  //   certificateUrl:'https://verify.w3schools.com/'
+  // },
+  // {
+  //   name: 'SQL',
+  //   imageUrl:
+  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
+  //   imageAlt: 'SQL Logo',
+  //   certificateUrl:'https://verify.w3schools.com/'
+  // },
+];
+
 export const projects = [
   {
     name: 'B-Fit',

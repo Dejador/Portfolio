@@ -107,13 +107,13 @@ export const certificates = [
     imageAlt: 'JavaScript Logo',
     certificateUrl:'https://verify.w3schools.com/1O457SU2OU'
   },
-  // {
-  //   name: 'TypeScript',
-  //   imageUrl:
-  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_typescript.svg?alt=media&token=92645e00-a6e9-4e35-b08b-bb978143c4da',
-  //   imageAlt: 'TypeScript Logo',
-  //   certificateUrl:'https://verify.w3schools.com/'
-  // },
+  {
+    name: 'TypeScript',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_typescript.svg?alt=media&token=92645e00-a6e9-4e35-b08b-bb978143c4da',
+    imageAlt: 'TypeScript Logo',
+    certificateUrl:'https://verify.w3schools.com/1O46KY9VCD'
+  },
   // {
   //   name: 'React',
   //   imageUrl:

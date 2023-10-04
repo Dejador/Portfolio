@@ -114,13 +114,13 @@ export const certificates = [
     imageAlt: 'TypeScript Logo',
     certificateUrl:'https://verify.w3schools.com/1O46KY9VCD'
   },
-  // {
-  //   name: 'React',
-  //   imageUrl:
-  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
-  //   imageAlt: 'React Logo',
-  //   certificateUrl:'https://verify.w3schools.com/'
-  // },
+  {
+    name: 'React',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
+    imageAlt: 'React Logo',
+    certificateUrl:'https://verify.w3schools.com/60HBP1H1U'
+  },
   // {
   //   name: 'SQL',
   //   imageUrl:

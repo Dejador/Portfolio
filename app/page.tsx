@@ -64,7 +64,7 @@ function Personal() {
           <div className='text-amber-400 mb-2 lg:mb-4'>Welcome</div>
           <div>I&apos;m Adolfo Murillo</div>
         </div>
-        <div className='mx-auto w-3/4 px-2 lg:px-12 mt-6 select-none'>
+        <div className='mx-auto w-3/4 px-2 lg:px-12 mt-12 select-none'>
           <div>
             A Frontend Web Developer in the making with an extensive background
             in design and customer success who loves to engage in new
@@ -128,7 +128,7 @@ function Certificates({ certificates: [] }) {
         whileInView={{ opacity: [0, 1], scale: [0, 1] }}
         transition={{ duration: 1 }}
         // className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
-        className='flex flex-wrap justify-around text-center w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
+        className='flex flex-wrap justify-around text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
       >
         {certificates.map(({ name, imageUrl, imageAlt, certificateUrl }, index) => (
           <>

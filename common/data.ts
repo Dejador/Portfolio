@@ -121,13 +121,13 @@ export const certificates = [
     imageAlt: 'React Logo',
     certificateUrl:'https://verify.w3schools.com/60HBP1H1U'
   },
-  // {
-  //   name: 'SQL',
-  //   imageUrl:
-  //     'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_react.svg?alt=media&token=b9f8c902-d688-4fe7-ae0f-f4ef2dc92d34',
-  //   imageAlt: 'SQL Logo',
-  //   certificateUrl:'https://verify.w3schools.com/'
-  // },
+  {
+    name: 'SQL',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_sql.svg?alt=media&token=62052bad-b42b-4963-b44f-10d5993ec2c8',
+    imageAlt: 'SQL Logo',
+    certificateUrl:'https://verify.w3schools.com/1O7WK5WVRF'
+  },
 ];
 
 export const projects = [

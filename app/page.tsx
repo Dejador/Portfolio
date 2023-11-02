@@ -93,7 +93,7 @@ function Skills({ skills: [] }) {
       <motion.div
         whileInView={{ opacity: [0, 1], scale: [0, 1] }}
         transition={{ duration: 1 }}
-        className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
+        className='flex flex-wrap justify-center text-center gap-x-12 lg:gap-x-24 gap-y-8 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
       >
         {skills.map(({ name, imageUrl, imageAlt }, index) => (
           <div
@@ -127,7 +127,7 @@ function Certificates({ certificates: [] }) {
       <motion.div
         whileInView={{ opacity: [0, 1], scale: [0, 1] }}
         transition={{ duration: 1 }}
-        className='flex flex-wrap justify-center text-center gap-12 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
+        className='flex flex-wrap justify-center text-center gap-x-12 gap-y-8 w-3/4 bg-white text-black rounded-3xl py-5 px-6 lg:px-3 select-none'
       >
         {certificates.map(({ name, imageUrl, imageAlt, certificateUrl }, index) => (
           <>

@@ -48,6 +48,12 @@ export const skills = [
     imageAlt: 'Vercel Logo',
   },
   {
+    name: 'SQL',
+    imageUrl:
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_sql.svg?alt=media&token=faf58020-ccc8-4e67-9685-3654fd0c5ef0',
+    imageAlt: 'SQL Logo',
+  },
+  {
     name: 'Tailwind',
     imageUrl:
       'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_tailwind.svg?alt=media&token=455664f1-624f-4acf-99c9-ec7e91adc495',

@@ -124,7 +124,7 @@ export const certificates = [
   {
     name: 'SQL',
     imageUrl:
-      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_sql.svg?alt=media&token=62052bad-b42b-4963-b44f-10d5993ec2c8',
+      'https://firebasestorage.googleapis.com/v0/b/portfolio-91e68.appspot.com/o/logo_sql.svg?alt=media&token=faf58020-ccc8-4e67-9685-3654fd0c5ef0',
     imageAlt: 'SQL Logo',
     certificateUrl:'https://verify.w3schools.com/1O7WK5WVRF'
   },
